@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Thin Red Line",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["jquery-2.1.4.min.js", "content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "square-outline-48.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
